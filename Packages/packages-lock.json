@@ -5,23 +5,22 @@
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.unity.ai.navigation": "2.0.9",
-        "com.unity.inputsystem": "1.17.0"
+        "com.unity.ai.navigation": "2.0.11"
       },
-      "hash": "42fc710dbf6878175974941296d3df36799cbcfb"
+      "hash": "a667bfda1062a19f6de3de096d18987553ce0d9a"
     },
     "com.kaijusolutions.agents.behavior": {
       "version": "https://github.com/Kaiju-Solutions/Kaiju-Agents-Behavior.git#release",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.unity.behavior": "1.0.14",
-        "com.kaijusolutions.agents": "1.0.4"
+        "com.unity.behavior": "1.0.15",
+        "com.kaijusolutions.agents": "1.1.0"
       },
-      "hash": "d0900dccc19fd6d1db098ad5a59dc07d1fd558bf"
+      "hash": "8c13fd4779616a41b5f212f524016db1bdeaa4fc"
     },
     "com.unity.ai.navigation": {
-      "version": "2.0.10",
+      "version": "2.0.11",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -30,7 +29,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.behavior": {
-      "version": "1.0.14",
+      "version": "1.0.15",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -47,7 +46,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.27",
+      "version": "1.8.28",
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -165,6 +164,12 @@
       "version": "2.0.0",
       "depth": 0,
       "source": "builtin",
+      "dependencies": {}
+    },
+    "fluid.htn": {
+      "version": "file:Fluid-HTN",
+      "depth": 0,
+      "source": "embedded",
       "dependencies": {}
     },
     "com.unity.modules.accessibility": {
