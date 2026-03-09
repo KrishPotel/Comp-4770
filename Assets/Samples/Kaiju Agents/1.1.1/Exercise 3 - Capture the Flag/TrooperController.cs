@@ -325,9 +325,6 @@ namespace KaijuSolutions.Agents.Exercises.CTF
                 trooper.OnFlagDropped += OnFlagDropped;
             }
 
-            target = GameObject.Find("Target");
-            pathFindtoFlagDownSide();
-
             base.OnEnable();
         }
 
@@ -351,6 +348,12 @@ namespace KaijuSolutions.Agents.Exercises.CTF
             trooper.OnFlagCaptured -= OnFlagCaptured;
             trooper.OnFlagReturned -= OnFlagReturned;
             trooper.OnFlagDropped -= OnFlagDropped;
+        }
+
+        private void Start()
+        {
+            target = GameObject.Find("Target");
+            pathFindtoFlagDownSide();
         }
     }
 }
