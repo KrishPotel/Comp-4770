@@ -20,6 +20,7 @@ MonoBehaviour:
   wanderRadius: 1
   separationDistance: 10
   separationCoefficient: 10
+  identifiers: 
   avoidance: 2
   avoidanceDistance: 5
   avoidanceSideDistance: 0
