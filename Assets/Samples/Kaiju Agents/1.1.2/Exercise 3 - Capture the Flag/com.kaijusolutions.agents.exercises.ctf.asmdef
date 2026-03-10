@@ -1,0 +1,17 @@
+{
+    "name": "com.kaijusolutions.agents.exercises.ctf",
+    "rootNamespace": "",
+    "references": [
+        "com.kaijusolutions.agents",
+        "Fluid.HTN"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

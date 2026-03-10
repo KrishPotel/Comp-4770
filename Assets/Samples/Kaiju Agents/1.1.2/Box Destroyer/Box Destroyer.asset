@@ -1,0 +1,1764 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9075604402024534963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db920e62f70f420bb33c771449926fa4, type: 3}
+  m_Name: Box Destroyer
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraph
+  Graphs:
+  - rid: 1697539880857108783
+  m_DebugInfo: {fileID: 9188659740926928663}
+  m_WasCompileWithPlaceholderNode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1697539880857108783
+      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        AuthoringAssetID:
+          m_Value0: 7236623372588189204
+          m_Value1: 12935798520251854793
+        m_DebugInfo: {fileID: 9188659740926928663}
+        BlackboardReference:
+          rid: 1697539880857108784
+        BlackboardGroupReferences: []
+        Root:
+          rid: 3870299845227184363
+        m_VersionTimestamp: 639086730504866835
+    - rid: 1697539880857108784
+      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Blackboard:
+          rid: 1697539880857108788
+        m_Source: {fileID: -6234250546875720758}
+    - rid: 1697539880857108788
+      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Variables:
+        - rid: 1697539903542526074
+        - rid: 1697539903542526075
+    - rid: 1697539903542526074
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 1697539903542526075
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 2430101936189655290
+          m_Value1: 11031740397460164968
+        Name: Box
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184363
+      type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 6867084509431653531
+          m_Value1: 10567126573909685448
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: -2
+        m_Child:
+          rid: 3870299845227184364
+        Repeat: 1
+        AllowMultipleRepeatsPerTick: 0
+    - rid: 3870299845227184364
+      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 7703795677125415191
+          m_Value1: 1414702890652455905
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184363
+        m_Children:
+        - rid: 3870299845227184365
+        - rid: 3870299845227184366
+        - rid: 3870299845227184367
+        - rid: 3870299845227184368
+        - rid: 3870299845227184369
+        - rid: 3870299845227184370
+        m_RegisteredObservers: []
+    - rid: 3870299845227184365
+      type: {class: SucceederModifier, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 12077156007640868505
+          m_Value1: 2725580558508524780
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184364
+        m_Child:
+          rid: 3870299845227184371
+    - rid: 3870299845227184366
+      type: {class: ParallelAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 7570345616830871451
+          m_Value1: 12616069362175715611
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184364
+        m_Children:
+        - rid: 3870299845227184372
+        - rid: 3870299845227184373
+        m_RegisteredObservers: []
+    - rid: 3870299845227184367
+      type: {class: KaijuEverythingVisionSensorAction, ns: KaijuSolutions.Agents.Behavior.Sensors, asm: com.kaijusolutions.agents.behavior}
+      data:
+        ID:
+          m_Value0: 13557233781861872071
+          m_Value1: 16417003652092429338
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184364
+        sensor:
+          rid: 3870299845227184374
+        observed:
+          rid: 1697539903542526075
+        nearest:
+          rid: 3870299845227184375
+    - rid: 3870299845227184368
+      type: {class: SucceederModifier, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 5879679816195001613
+          m_Value1: 1228823700245629869
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184364
+        m_Child:
+          rid: 3870299845227184376
+    - rid: 3870299845227184369
+      type: {class: ParallelAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 11895834829264160325
+          m_Value1: 12826048602492136791
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184364
+        m_Children:
+        - rid: 3870299845227184377
+        - rid: 3870299845227184378
+        m_RegisteredObservers: []
+    - rid: 3870299845227184370
+      type: {class: KaijuRunActuatorAction, ns: KaijuSolutions.Agents.Behavior.Actuators, asm: com.kaijusolutions.agents.behavior}
+      data:
+        ID:
+          m_Value0: 10858110008933574928
+          m_Value1: 3919195368669448118
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184364
+        actuator:
+          rid: 3870299845227184379
+    - rid: 3870299845227184371
+      type: {class: KaijuStopAction, ns: KaijuSolutions.Agents.Behavior.Movement, asm: com.kaijusolutions.agents.behavior}
+      data:
+        ID:
+          m_Value0: 1935596924387463981
+          m_Value1: 2515492463135286585
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184365
+        agent:
+          rid: 3870299845227184380
+    - rid: 3870299845227184372
+      type: {class: KaijuWanderAction, ns: KaijuSolutions.Agents.Behavior.Movement, asm: com.kaijusolutions.agents.behavior}
+      data:
+        ID:
+          m_Value0: 9288762582628107946
+          m_Value1: 1574073089373622174
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184366
+        agent:
+          rid: 3870299845227184381
+        configuration:
+          rid: 3870299845227184382
+        wander:
+          rid: 3870299845227184383
+    - rid: 3870299845227184373
+      type: {class: KaijuObstacleAvoidanceAction, ns: KaijuSolutions.Agents.Behavior.Movement, asm: com.kaijusolutions.agents.behavior}
+      data:
+        ID:
+          m_Value0: 4833131180768445288
+          m_Value1: 16626351747216859834
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184366
+        agent:
+          rid: 3870299845227184384
+        configuration:
+          rid: 3870299845227184385
+        avoidObstacles:
+          rid: 3870299845227184386
+    - rid: 3870299845227184374
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Sensors.KaijuEverythingVisionSensor, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184375
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 1
+    - rid: 3870299845227184376
+      type: {class: KaijuStopAction, ns: KaijuSolutions.Agents.Behavior.Movement, asm: com.kaijusolutions.agents.behavior}
+      data:
+        ID:
+          m_Value0: 18207158778190880844
+          m_Value1: 11799786525013472127
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184368
+        agent:
+          rid: 3870299845227184387
+    - rid: 3870299845227184377
+      type: {class: KaijuLookAction, ns: KaijuSolutions.Agents.Behavior.Movement, asm: com.kaijusolutions.agents.behavior}
+      data:
+        ID:
+          m_Value0: 8280061528070167057
+          m_Value1: 17952786043413724827
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184369
+        agent:
+          rid: 3870299845227184388
+        target:
+          rid: 1697539903542526075
+    - rid: 3870299845227184378
+      type: {class: KaijuSeekAction, ns: KaijuSolutions.Agents.Behavior.Movement, asm: com.kaijusolutions.agents.behavior}
+      data:
+        ID:
+          m_Value0: 5081327298689210604
+          m_Value1: 14089585826298037124
+        Graph:
+          rid: 1697539880857108783
+        m_Parent:
+          rid: 3870299845227184369
+        agent:
+          rid: 3870299845227184389
+        configuration:
+          rid: 3870299845227184390
+        target:
+          rid: 1697539903542526075
+        seek:
+          rid: 3870299845227184391
+    - rid: 3870299845227184379
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Actuators.KaijuActuator, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184380
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184381
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184382
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Movement.KaijuMovementConfiguration, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184383
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference, com.kaijusolutions.agents.behavior]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184384
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184385
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Movement.KaijuMovementConfiguration, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184386
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference, com.kaijusolutions.agents.behavior]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184387
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184388
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184389
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184390
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Movement.KaijuMovementConfiguration, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 3870299845227184391
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference, com.kaijusolutions.agents.behavior]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+--- !u!114 &-6234250546875720758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
+  m_Name: Box Destroyer Blackboard
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.RuntimeBlackboardAsset
+  VersionTimestamp: 639050206324578881
+  AssetID:
+    m_Value0: 7236623372588189204
+    m_Value1: 12935798520251854793
+  m_Blackboard:
+    m_Variables:
+    - rid: 1697539880857108790
+    - rid: 1697539880857109066
+  m_SharedBlackboardVariableGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1697539880857108790
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 1697539880857109066
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 2430101936189655290
+          m_Value1: 11031740397460164968
+        Name: Box
+        m_Value: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8f2220607dac4db5082ff333fafb8, type: 3}
+  m_Name: Box Destroyer
+  m_EditorClassIdentifier: Unity.Behavior.Authoring::Unity.Behavior.BehaviorAuthoringGraph
+  Blackboard: {fileID: 926905457425053743}
+  m_Description: 
+  m_Nodes:
+  - rid: 1697539880857108791
+  - rid: 1697539880857108794
+  - rid: 1697539880857108815
+  - rid: 1697539880857108830
+  - rid: 1697539880857109024
+  - rid: 1697539880857109092
+  - rid: 1697539880857109179
+  - rid: 1697539882238345341
+  - rid: 1697539882238345353
+  - rid: 1697539882238345415
+  - rid: 1697539882238345546
+  - rid: 1697539882238345561
+  - rid: 1697539882238345598
+  - rid: 1697539882238345617
+  - rid: 1697539883129897109
+  - rid: 1697539883129897208
+  - rid: 1697539883129897335
+  - rid: 1697539883129897378
+  - rid: 1697539883129897449
+  - rid: 1697539883129897492
+  m_VersionTimestamp: 639086730504866835
+  m_SerializedVersion: 2
+  m_DebugInfo: {fileID: 9188659740926928663}
+  m_RuntimeGraph: {fileID: -9075604402024534963}
+  AssetID:
+    m_Value0: 7236623372588189204
+    m_Value1: 12935798520251854793
+  Story:
+    Story: 
+    StoryVariableNames: []
+    Variables: []
+  m_NodeModelsInfo:
+  - Name: On Start
+    Story: 
+    RuntimeTypeString: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 3335272451348827663
+      m_Value1: 11549843281177505721
+    Variables: []
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Wander
+    Story: Have [agent] [wander] using [configuration].
+    RuntimeTypeString: KaijuSolutions.Agents.Behavior.Movement.KaijuWanderAction,
+      com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 2785744509976453278
+      m_Value1: 4771354095118006038
+    Variables:
+    - Name: wander
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference,
+          com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: configuration
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.Movement.KaijuMovementConfiguration,
+          com.kaijusolutions.agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: agent
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Obstacle Avoidance
+    Story: Have [agent] [avoidObstacles] using [configuration].
+    RuntimeTypeString: KaijuSolutions.Agents.Behavior.Movement.KaijuObstacleAvoidanceAction,
+      com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 2785744509976453278
+      m_Value1: 4915469283193861910
+    Variables:
+    - Name: avoidObstacles
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference,
+          com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: configuration
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.Movement.KaijuMovementConfiguration,
+          com.kaijusolutions.agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: agent
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Sequence
+    Story: 
+    RuntimeTypeString: Unity.Behavior.SequenceComposite, Unity.Behavior, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 10181448252506100447
+      m_Value1: 8737116843063128493
+    Variables: []
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Everything Vision Sense
+    Story: See [observed] with everything [sensor].
+    RuntimeTypeString: KaijuSolutions.Agents.Behavior.Sensors.KaijuEverythingVisionSensorAction,
+      com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 2785744509976453278
+      m_Value1: 5275757253383501590
+    Variables:
+    - Name: nearest
+      Type:
+        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    - Name: sensor
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.Sensors.KaijuEverythingVisionSensor,
+          com.kaijusolutions.agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: observed
+      Type:
+        m_SerializableType: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Seek
+    Story: '[agent] [seek] to [target] using [configuration].'
+    RuntimeTypeString: KaijuSolutions.Agents.Behavior.Movement.KaijuSeekAction, com.kaijusolutions.agents.behavior,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 2785744509976453278
+      m_Value1: 4050778154738726678
+    Variables:
+    - Name: seek
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference,
+          com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: target
+      Type:
+        m_SerializableType: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: configuration
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.Movement.KaijuMovementConfiguration,
+          com.kaijusolutions.agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: agent
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Run Actuator
+    Story: Run actuator [actuator].
+    RuntimeTypeString: KaijuSolutions.Agents.Behavior.Actuators.KaijuRunActuatorAction,
+      com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 2785744509976453278
+      m_Value1: 5059584471269717782
+    Variables:
+    - Name: actuator
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.Actuators.KaijuActuator, com.kaijusolutions.agents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Stop All
+    Story: Stop all movements on [agent].
+    RuntimeTypeString: KaijuSolutions.Agents.Behavior.Movement.KaijuStopAction, com.kaijusolutions.agents.behavior,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 2785744509976453278
+      m_Value1: 5852218005686925078
+    Variables:
+    - Name: agent
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Succeeder
+    Story: 
+    RuntimeTypeString: Unity.Behavior.SucceederModifier, Unity.Behavior, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 11118427888463720234
+      m_Value1: 7099678123072538779
+    Variables: []
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Run In Parallel
+    Story: 
+    RuntimeTypeString: Unity.Behavior.ParallelAllComposite, Unity.Behavior, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 6216542881172158703
+      m_Value1: 2191282456596108218
+    Variables: []
+    NamedChildren: []
+    IsPlaceholder: 0
+  - Name: Look At
+    Story: Have [agent] look at [target].
+    RuntimeTypeString: KaijuSolutions.Agents.Behavior.Movement.KaijuLookAction, com.kaijusolutions.agents.behavior,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    RuntimeTypeID:
+      m_Value0: 2785744509976453278
+      m_Value1: 7077197104331699990
+    Variables:
+    - Name: target
+      Type:
+        m_SerializableType: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: agent
+      Type:
+        m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+    IsPlaceholder: 0
+  m_Blackboards: []
+  m_MainBlackboardAuthoringAsset: {fileID: 926905457425053743}
+  m_CommandBuffer:
+    m_Commands: []
+  m_SubgraphsInfo: []
+  m_BlackboardMissingManagedRef: 0
+  m_GraphMissingManagedRef: 0
+  m_HasMissingTypeInManagedRef: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1697539880857108791
+      type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 0}
+        ID:
+          m_Value0: 6867084509431653531
+          m_Value1: 10567126573909685448
+        Parents: []
+        PortModels:
+        - rid: 1697539880857108792
+        NodeType:
+          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 3335272451348827663
+          m_Value1: 11549843281177505721
+        m_FieldValues: []
+        Repeat: 1
+        AllowMultipleRepeatsPerTick: 0
+    - rid: 1697539880857108792
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857108791
+        m_Connections:
+        - rid: 1697539880857108831
+    - rid: 1697539880857108794
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -860.5, y: 279}
+        ID:
+          m_Value0: 9288762582628107946
+          m_Value1: 1574073089373622174
+        Parents: []
+        PortModels:
+        - rid: 1697539880857108795
+        - rid: 1697539880857108796
+        NodeType:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuWanderAction,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 2785744509976453278
+          m_Value1: 4771354095118006038
+        m_FieldValues:
+        - rid: 1697539880857108797
+        - rid: 1697539880857108798
+        - rid: 1697539880857108799
+    - rid: 1697539880857108795
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857108794
+        m_Connections:
+        - rid: 1697539882238345417
+    - rid: 1697539880857108796
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857108794
+        m_Connections: []
+    - rid: 1697539880857108797
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: wander
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857108800
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857108798
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: configuration
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.Movement.KaijuMovementConfiguration,
+            com.kaijusolutions.agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857108801
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857108799
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: agent
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857108802
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857108800
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference, com.kaijusolutions.agents.behavior]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857108801
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Movement.KaijuMovementConfiguration, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857108802
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857108815
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -449.5, y: 279}
+        ID:
+          m_Value0: 4833131180768445288
+          m_Value1: 16626351747216859834
+        Parents: []
+        PortModels:
+        - rid: 1697539880857108816
+        - rid: 1697539880857108817
+        NodeType:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuObstacleAvoidanceAction,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 2785744509976453278
+          m_Value1: 4915469283193861910
+        m_FieldValues:
+        - rid: 1697539880857108818
+        - rid: 1697539880857108819
+        - rid: 1697539880857108820
+    - rid: 1697539880857108816
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857108815
+        m_Connections:
+        - rid: 1697539882238345417
+    - rid: 1697539880857108817
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857108815
+        m_Connections: []
+    - rid: 1697539880857108818
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: avoidObstacles
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857108821
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857108819
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: configuration
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.Movement.KaijuMovementConfiguration,
+            com.kaijusolutions.agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857108822
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857108820
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: agent
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857108823
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857108821
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference, com.kaijusolutions.agents.behavior]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857108822
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Movement.KaijuMovementConfiguration, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857108823
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857108830
+      type: {class: CompositeNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -6.130904, y: 102.99998}
+        ID:
+          m_Value0: 7703795677125415191
+          m_Value1: 1414702890652455905
+        Parents: []
+        PortModels:
+        - rid: 1697539880857108831
+        - rid: 1697539880857108832
+        NodeType:
+          m_SerializableType: Unity.Behavior.SequenceComposite, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 10181448252506100447
+          m_Value1: 8737116843063128493
+        m_FieldValues: []
+    - rid: 1697539880857108831
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857108830
+        m_Connections:
+        - rid: 1697539880857108792
+    - rid: 1697539880857108832
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857108830
+        m_Connections:
+        - rid: 1697539882238345354
+        - rid: 1697539882238345416
+        - rid: 1697539880857109025
+        - rid: 1697539882238345562
+        - rid: 1697539882238345618
+        - rid: 1697539880857109180
+    - rid: 1697539880857109024
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 3.26001, y: 215.32008}
+        ID:
+          m_Value0: 13557233781861872071
+          m_Value1: 16417003652092429338
+        Parents: []
+        PortModels:
+        - rid: 1697539880857109025
+        - rid: 1697539880857109026
+        NodeType:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Sensors.KaijuEverythingVisionSensorAction,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 2785744509976453278
+          m_Value1: 5275757253383501590
+        m_FieldValues:
+        - rid: 1697539880857109027
+        - rid: 1697539880857109028
+        - rid: 1697539880857109029
+    - rid: 1697539880857109025
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857109024
+        m_Connections:
+        - rid: 1697539880857108832
+    - rid: 1697539880857109026
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857109024
+        m_Connections: []
+    - rid: 1697539880857109027
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: nearest
+        Type:
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 1697539880857109030
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857109028
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: sensor
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.Sensors.KaijuEverythingVisionSensor,
+            com.kaijusolutions.agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857109031
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857109029
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: observed
+        Type:
+          m_SerializableType: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857109032
+        LinkedVariable:
+          rid: 1697539880857109056
+    - rid: 1697539880857109030
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: 1
+    - rid: 1697539880857109031
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Sensors.KaijuEverythingVisionSensor, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857109032
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857109056
+      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 2430101936189655290
+          m_Value1: 11031740397460164968
+        Name: Box
+        IsExposed: 0
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 1697539880857109092
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 904.5, y: 279}
+        ID:
+          m_Value0: 5081327298689210604
+          m_Value1: 14089585826298037124
+        Parents: []
+        PortModels:
+        - rid: 1697539880857109093
+        - rid: 1697539880857109094
+        NodeType:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuSeekAction,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 2785744509976453278
+          m_Value1: 4050778154738726678
+        m_FieldValues:
+        - rid: 1697539880857109095
+        - rid: 1697539882238345296
+        - rid: 1697539880857109097
+        - rid: 1697539880857109098
+    - rid: 1697539880857109093
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857109092
+        m_Connections:
+        - rid: 1697539882238345619
+    - rid: 1697539880857109094
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857109092
+        m_Connections: []
+    - rid: 1697539880857109095
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: seek
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857109099
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857109097
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: configuration
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.Movement.KaijuMovementConfiguration,
+            com.kaijusolutions.agents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857109101
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857109098
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: agent
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857109102
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857109099
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Behavior.Movement.KaijuMovementReference, com.kaijusolutions.agents.behavior]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857109101
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Movement.KaijuMovementConfiguration, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857109102
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539880857109179
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 1204, y: 191}
+        ID:
+          m_Value0: 10858110008933574928
+          m_Value1: 3919195368669448118
+        Parents: []
+        PortModels:
+        - rid: 1697539880857109180
+        - rid: 1697539880857109181
+        NodeType:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Actuators.KaijuRunActuatorAction,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 2785744509976453278
+          m_Value1: 5059584471269717782
+        m_FieldValues:
+        - rid: 1697539880857109182
+    - rid: 1697539880857109180
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857109179
+        m_Connections:
+        - rid: 1697539880857108832
+    - rid: 1697539880857109181
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539880857109179
+        m_Connections: []
+    - rid: 1697539880857109182
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: actuator
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.Actuators.KaijuActuator, com.kaijusolutions.agents,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539880857109183
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539880857109183
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.Actuators.KaijuActuator, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539882238345296
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: target
+        Type:
+          m_SerializableType: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539882238345297
+        LinkedVariable:
+          rid: 1697539882238345298
+    - rid: 1697539882238345297
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539882238345298
+      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 2430101936189655290
+          m_Value1: 11031740397460164968
+        Name: Box
+        IsExposed: 0
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 1697539882238345341
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -1183.5, y: 279}
+        ID:
+          m_Value0: 1935596924387463981
+          m_Value1: 2515492463135286585
+        Parents: []
+        PortModels:
+        - rid: 1697539882238345342
+        - rid: 1697539882238345343
+        NodeType:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuStopAction,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 2785744509976453278
+          m_Value1: 5852218005686925078
+        m_FieldValues:
+        - rid: 1697539882238345344
+    - rid: 1697539882238345342
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345341
+        m_Connections:
+        - rid: 1697539882238345355
+    - rid: 1697539882238345343
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345341
+        m_Connections: []
+    - rid: 1697539882238345344
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: agent
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539882238345345
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539882238345345
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539882238345353
+      type: {class: ModifierNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -1194.9198, y: 212.20856}
+        ID:
+          m_Value0: 12077156007640868505
+          m_Value1: 2725580558508524780
+        Parents: []
+        PortModels:
+        - rid: 1697539882238345354
+        - rid: 1697539882238345355
+        NodeType:
+          m_SerializableType: Unity.Behavior.SucceederModifier, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 11118427888463720234
+          m_Value1: 7099678123072538779
+        m_FieldValues: []
+    - rid: 1697539882238345354
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345353
+        m_Connections:
+        - rid: 1697539880857108832
+    - rid: 1697539882238345355
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345353
+        m_Connections:
+        - rid: 1697539882238345342
+    - rid: 1697539882238345415
+      type: {class: RunInParallelNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: -681.82916, y: 184.86906}
+        ID:
+          m_Value0: 7570345616830871451
+          m_Value1: 12616069362175715611
+        Parents: []
+        PortModels:
+        - rid: 1697539882238345416
+        - rid: 1697539882238345417
+        NodeType:
+          m_SerializableType: Unity.Behavior.ParallelAllComposite, Unity.Behavior,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 6216542881172158703
+          m_Value1: 2191282456596108218
+        m_FieldValues: []
+        m_Mode: 0
+    - rid: 1697539882238345416
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345415
+        m_Connections:
+        - rid: 1697539880857108832
+    - rid: 1697539882238345417
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345415
+        m_Connections:
+        - rid: 1697539880857108795
+        - rid: 1697539880857108816
+    - rid: 1697539882238345546
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 356.5, y: 279}
+        ID:
+          m_Value0: 18207158778190880844
+          m_Value1: 11799786525013472127
+        Parents: []
+        PortModels:
+        - rid: 1697539882238345547
+        - rid: 1697539882238345548
+        NodeType:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuStopAction,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 2785744509976453278
+          m_Value1: 5852218005686925078
+        m_FieldValues:
+        - rid: 1697539882238345549
+    - rid: 1697539882238345547
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345546
+        m_Connections:
+        - rid: 1697539882238345563
+    - rid: 1697539882238345548
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345546
+        m_Connections: []
+    - rid: 1697539882238345549
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: agent
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539882238345550
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539882238345550
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539882238345561
+      type: {class: ModifierNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 458.44275, y: 210.65135}
+        ID:
+          m_Value0: 5879679816195001613
+          m_Value1: 1228823700245629869
+        Parents: []
+        PortModels:
+        - rid: 1697539882238345562
+        - rid: 1697539882238345563
+        NodeType:
+          m_SerializableType: Unity.Behavior.SucceederModifier, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 11118427888463720234
+          m_Value1: 7099678123072538779
+        m_FieldValues: []
+    - rid: 1697539882238345562
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345561
+        m_Connections:
+        - rid: 1697539880857108832
+    - rid: 1697539882238345563
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345561
+        m_Connections:
+        - rid: 1697539882238345547
+    - rid: 1697539882238345598
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 600, y: 279}
+        ID:
+          m_Value0: 8280061528070167057
+          m_Value1: 17952786043413724827
+        Parents: []
+        PortModels:
+        - rid: 1697539882238345599
+        - rid: 1697539882238345600
+        NodeType:
+          m_SerializableType: KaijuSolutions.Agents.Behavior.Movement.KaijuLookAction,
+            com.kaijusolutions.agents.behavior, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 2785744509976453278
+          m_Value1: 7077197104331699990
+        m_FieldValues:
+        - rid: 1697539882238345601
+        - rid: 1697539882238345602
+    - rid: 1697539882238345599
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345598
+        m_Connections:
+        - rid: 1697539882238345619
+    - rid: 1697539882238345600
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345598
+        m_Connections: []
+    - rid: 1697539882238345601
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: target
+        Type:
+          m_SerializableType: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539882238345603
+        LinkedVariable:
+          rid: 1697539882238345298
+    - rid: 1697539882238345602
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: agent
+        Type:
+          m_SerializableType: KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 1697539882238345604
+        LinkedVariable:
+          rid: -2
+    - rid: 1697539882238345603
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539882238345604
+      type: {class: 'BlackboardVariable`1[[KaijuSolutions.Agents.KaijuAgent, com.kaijusolutions.agents]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 1697539882238345617
+      type: {class: RunInParallelNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 790.5, y: 191}
+        ID:
+          m_Value0: 11895834829264160325
+          m_Value1: 12826048602492136791
+        Parents: []
+        PortModels:
+        - rid: 1697539882238345618
+        - rid: 1697539882238345619
+        NodeType:
+          m_SerializableType: Unity.Behavior.ParallelAllComposite, Unity.Behavior,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 6216542881172158703
+          m_Value1: 2191282456596108218
+        m_FieldValues: []
+        m_Mode: 0
+    - rid: 1697539882238345618
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345617
+        m_Connections:
+        - rid: 1697539880857108832
+    - rid: 1697539882238345619
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 1697539882238345617
+        m_Connections:
+        - rid: 1697539882238345599
+        - rid: 1697539880857109093
+    - rid: 1697539883129897109
+      type: {class: StickyNoteModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: -659.97107, y: 329.4947}
+        ID:
+          m_Value0: 12542999270724500031
+          m_Value1: 16932794690655682079
+        Parents: []
+        PortModels: []
+        Text: 'In the "Box Destroyer Configuration" assigned to the "Configuration"
+          of the agent, you must uncheck "Clear".
+
+          Otherwise, one will
+          stop the other here! While we could just run these in a sequence and get
+          a good enough result,
+
+          there may be a single-tick delay between
+          them running, so we use the parallel node to start them in the same tick.'
+    - rid: 1697539883129897208
+      type: {class: StickyNoteModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: -1444.466, y: 179.14688}
+        ID:
+          m_Value0: 5433438190479094468
+          m_Value1: 9508454978984776391
+        Parents: []
+        PortModels: []
+        Text: 'The agent should never be moving here,
+
+          but if it is, we
+          want to stop it. Since this will
+
+          fail if we don''t have any
+          movements, we
+
+          must force it to succeed. You may notice
+
+          that
+          all "Agent" fields in this are empty. This
+
+          is because all nodes
+          will intelligently try to
+
+          find the attached agent if not assigned.
+
+          These
+          will also cache and share said found
+
+          agent between them, ensuring
+          efficiency is
+
+          not compromised by leaving fields blank. '
+    - rid: 1697539883129897335
+      type: {class: StickyNoteModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: -4.25766, y: 231.652}
+        ID:
+          m_Value0: 14311207784738316539
+          m_Value1: 2772239899492430552
+        Parents: []
+        PortModels: []
+        Text: 'The first box we sense will go into the "Box" variable which we can
+          use later.
+
+          Since we only have one instance of this sensor, it
+          will automatically find it for us.
+
+          If you had multiple and need
+          a specific one, use a blackboard variable for it.
+
+          Turning the
+          nearest toggle off would get the furthest.'
+    - rid: 1697539883129897378
+      type: {class: StickyNoteModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: 291.89996, y: 325.63556}
+        ID:
+          m_Value0: 7106020461158044926
+          m_Value1: 15218290046074382114
+        Parents: []
+        PortModels: []
+        Text: Stop the wandering and obstacle avoidance before seeking.
+    - rid: 1697539883129897449
+      type: {class: StickyNoteModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: 791.3246, y: 324.54272}
+        ID:
+          m_Value0: 15705624399366426306
+          m_Value1: 11632671208857550213
+        Parents: []
+        PortModels: []
+        Text: 'Seek to the box our sensor found. Also explicitly look at it, as if
+          we reach it very quick, we may not be
+
+          fully rotated towards
+          it yet which could cause our actuator to fail. '
+    - rid: 1697539883129897492
+      type: {class: StickyNoteModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        Position: {x: 1306.0494, y: 237.11615}
+        ID:
+          m_Value0: 15093822973209004733
+          m_Value1: 4878663845009646025
+        Parents: []
+        PortModels: []
+        Text: 'Like the sensors, if not assigned, this will get any actuator.
+
+          However,
+          unlike the sensors, this could return any type of actuator.
+
+          Since
+          this agent only has the one actuator, we can leave it blank.'
+--- !u!114 &926905457425053743
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd922ae02c94c87a66e46a10a7319b9, type: 3}
+  m_Name: Box Destroyer Blackboard
+  m_EditorClassIdentifier: Unity.Behavior.Authoring::Unity.Behavior.BehaviorBlackboardAuthoringAsset
+  AssetID:
+    m_Value0: 7236623372588189204
+    m_Value1: 12935798520251854793
+  m_Variables:
+  - rid: 1697539880857108793
+  - rid: 1697539880857109055
+  m_VersionTimestamp: 639050206324578881
+  m_CommandBuffer:
+    m_Commands: []
+  m_RuntimeBlackboardAsset: {fileID: -6234250546875720758}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1697539880857108793
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        IsExposed: 0
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 1697539880857109055
+      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 2430101936189655290
+          m_Value1: 11031740397460164968
+        Name: Box
+        IsExposed: 0
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+--- !u!114 &9188659740926928663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b27bb6d9a2c8d540a10dff10acc543e, type: 3}
+  m_Name: Box Destroyer Debug Info
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphDebugInfo
+  m_CodeBreakPointsList: []
