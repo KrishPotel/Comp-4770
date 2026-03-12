@@ -358,6 +358,10 @@ GameObject:
   - component: {fileID: 6190703363887382500}
   - component: {fileID: 9114223757832726476}
   - component: {fileID: 7648946763058690993}
+  - component: {fileID: -2157818078229968743}
+  - component: {fileID: -375072424260451238}
+  - component: {fileID: 3918778210687167249}
+  - component: {fileID: -3434966267056102528}
   m_Layer: 0
   m_Name: Trooper
   m_TagString: Untagged
@@ -481,6 +485,100 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2157818078229968743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329593620247676017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cd498dac994b699065554fbb1cfd8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.kaijusolutions.agents.exercises.ctf::KaijuSolutions.Agents.Exercises.CTF.AmmoVisionSensor
+  automatic: 1
+  distance: 20
+  angle: 180
+  lineOfSight: 0
+  radius: 0
+  offset: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 51
+  triggers: 0
+  editorColor: {r: 1, g: 1, b: 1, a: 1}
+  editorFromAgent: 1
+--- !u!114 &-375072424260451238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329593620247676017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b810a70392ea43d8ae75ccc52d9f9b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.kaijusolutions.agents.exercises.ctf::KaijuSolutions.Agents.Exercises.CTF.FlagVisionSensor
+  automatic: 1
+  distance: 20
+  angle: 180
+  lineOfSight: 1
+  radius: 0
+  offset: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 51
+  triggers: 0
+  editorColor: {r: 1, g: 1, b: 1, a: 1}
+  editorFromAgent: 1
+--- !u!114 &3918778210687167249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329593620247676017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b10fe6d6aeb4b1897514f9ce93ddf86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.kaijusolutions.agents.exercises.ctf::KaijuSolutions.Agents.Exercises.CTF.TrooperEnemyVisionSensor
+  automatic: 1
+  distance: 20
+  angle: 180
+  lineOfSight: 1
+  radius: 0
+  offset: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 51
+  triggers: 0
+  editorColor: {r: 1, g: 1, b: 1, a: 1}
+  editorFromAgent: 1
+--- !u!114 &-3434966267056102528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329593620247676017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5459ad8eabd24c1b9be53854c65f3c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.kaijusolutions.agents.exercises.ctf::KaijuSolutions.Agents.Exercises.CTF.BlasterActuator
+  charge: 0.1
+  cooldown: 0
+  range: 4
+  mask:
+    serializedVersion: 2
+    m_Bits: 51
+  triggers: 0
+  checkParents: 1
+  lineRenderer: {fileID: 0}
+  visible: 1
 --- !u!1 &8630997091936437483
 GameObject:
   m_ObjectHideFlags: 0
